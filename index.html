@@ -13,16 +13,21 @@
     <div class="slide_1" id="1" >
         <h1 >Hola, soy Already_<span class="dinamic-type"></span></h1>
         <p>Mi nombre real es Martin Munoz Univaso, actualmente soy alumno de 4to medio del instituto ohiggins, Rancagua. el proposito de esto es que me conozcan un poco.</p>
-        <input type="button" value="si" onClick="document.getElementById('2').scrollIntoView();" con />
+        <img src="./photos/scroll-bottom.svg" id="scroll-down" >
+        
     </div>
-    <div class="blank"></div>
+    <div class="blank">
+      
+        <div id="loading-box"></div>
+      
+    </div>
     <div class="slide_2" id="2">
         <img src="./photos/nicolas-thomas-3GZi6OpSDcY-unsplash.jpg" class="fade-in">
         <div class="text_section fade-in" >
         <div class="text_container">
         <h2>SOBRE MI</h2>
         <h1><span class="dinamic-type-2"></span></h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe hic id aliquam illum ea odit perspiciatis dicta, architecto amet assumenda, expedita at. Distinctio atque minus sit excepturi eligendi nam similique?</p>
+        <p>Me llamo Martin Muñoz Univaso y desde que tengo 7 años me apasiona la matemática, la programación, la electrónica y la robótica. A esa edad descubrí las dos áreas que le dieron un propósito a mi vida, aprendí sobre electrónica y descubrí la programación. Siempre he sido un chico curioso y aprender sobre esos temas era lo que más me gustaba.<br><br> El primer lenguaje que conocí fue C + +(fue un tanto difícil) y el primer circuito que armé fue un temporizador con un circuito astable 555 que prendia y apagaba un LED. mientras fui creciendo, mis conocimientos tambien, empece a utilizar placas como arduino o raspberry pie, aprendí nuevos lenguajes, incluso me sumergí en el mundo de la impresión 3D armando mi propia impresora</p>
     </div>
 </div>
 </div>
@@ -31,23 +36,45 @@
     <script src="animations.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+
+        setTimeout(function(){
         var typed = new Typed(".dinamic-type",
         {strings: ['Dev', 'Printed', 'Dead'],
     typeSpeed:110,
     backSpeed: 110,
     startDelay:500,
     smartBackspace: false,
-    loop: true})
+    loop: true})},2000);
     </script>
 
 <script>
+
+    setTimeout(function(){
     var typed = new Typed(".dinamic-type-2",
     {strings: ['El futuro Ingeniero', 'Maker', 'Car Enthusiast', 'Gamer', 'Math Lover'],
 typeSpeed:90,
 backSpeed: 90,
 startDelay:500,
 smartBackspace: false,
-loop: true})
+loop: true})},2000);
+</script>
+
+<script>      
+function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+disableScrolling();
+    setTimeout(function(){
+        document.getElementById('loading-box').style.maxHeight = 0;
+        enableScrolling()
+    },1000); 
+
 </script>
 </body>
 </html>
