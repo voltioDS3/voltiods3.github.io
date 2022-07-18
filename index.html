@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-witdh, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='styles.css'>
+    
+</head>
+<body>
+    <div class="slide_1" id="1" >
+        <h1 >Hola, soy Already_<span class="dinamic-type"></span></h1>
+        <p>Mi nombre real es Martin Munoz Univaso, actualmente soy alumno de 4to medio del instituto ohiggins, Rancagua. el proposito de esto es que me conozcan un poco.</p>
+        <input type="button" value="si" onClick="document.getElementById('2').scrollIntoView();" con />
+    </div>
+    <div class="blank"></div>
+    <div class="slide_2" id="2">
+        <img src="./photos/nicolas-thomas-3GZi6OpSDcY-unsplash.jpg" class="fade-in">
+        <div class="text_section fade-in" >
+        <div class="text_container">
+        <h2>SOBRE MI</h2>
+        <h1>El ingeniero</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe hic id aliquam illum ea odit perspiciatis dicta, architecto amet assumenda, expedita at. Distinctio atque minus sit excepturi eligendi nam similique?</p>
+    </div>
+</div>
+</div>
+    <div class="slide_3"></div>
+    <img src="./photos/nicolas-thomas-3GZi6OpSDcY-unsplash.jpg" class="fade-in">
+        <div class="text_section fade-in" >
+        <div class="text_container">
+        <h2>SOBRE MI</h2>
+        <h1>El ingeniero</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe hic id aliquam illum ea odit perspiciatis dicta, architecto amet assumenda, expedita at. Distinctio atque minus sit excepturi eligendi nam similique?</p>
+    </div>
+</div>
+    <script src="animations.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".dinamic-type",
+        {strings: ['Dev', 'Printed', 'Dead'],
+    typeSpeed:110,
+    backSpeed: 110,
+    startDelay:500,
+    smartBackspace: false,
+    loop: true})
+    </script>
+</body>
+</html>
