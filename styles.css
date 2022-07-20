@@ -343,7 +343,7 @@ div{
 
 .slide_3{
     position: relative;
-    height: 200vh;
+    height: 250vh;
     background-color: #18978F;
     display: flex;
     flex-direction: row;
@@ -383,33 +383,28 @@ div{
     fill: #FFFFFF;
 }
 
-.timeline{
-    width: 10%;
-    align-self: center;
-    position: relative;
-}
 
-.container-2015{
-    float: right;
-}
+
 
 .slide_3 div{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-
 }
 
 .left-section{
     margin-top: 5vh;
+    gap: 30px;
 }
 .right-section{
     margin-top: 5vh;
+    gap: 30px;
 }
 
 
+
 .container-years{
-   
+    
+    
     background-color: #54BAB9;
     border-radius: 5vh;
     padding: 3vh;
@@ -417,7 +412,7 @@ div{
     width: 70%;
     transition: all 1s ease;
     align-self: center;
-   
+    gap: 10px;
 }
 
 .slide_3 h1{
@@ -425,22 +420,90 @@ div{
     font-weight: bold;  
     font-size: 5vh;
     color: white;
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .slide_3 p{
     color:whitesmoke;
     font-family: "Alliance No.1";
     font-weight: regular;  
-    margin-top: 4vh;
+    
     font-size: 2.5vh;
+}
+.timeline{
+    width: 1%;
+    height: 100%;
+    align-self:flex-start;
+    position: relative;
+    background-color: white;
+
+    
 }
 
 .timeline-point{
     position: absolute;
-    top: 0;
+    top: 5vh;
     left: 50%;
-    width: 2vh;
-    height: 2vh;
-    background: red;
+    transform: translateX(-50%);
+    width: 3vh;
+    height: 3vh;
+    background: white;
+    border-radius: 50%;
+   
 }
+
+.slide_3 h2{
+    font-family: "Alliance No.1";
+    font-weight: 600;
+    font-size: 3vh;
+    color: white;
+}
+
+q{
+    font-style: italic;
+}
+
+#s2016{
+    position: relative;
+    top: 40vh;  
+    height: auto;
+}
+
+#s2017{
+    position: relative;
+    top: 40vh;  
+    height: auto;
+}
+
+#s2018{
+    position: relative;
+    top: 85vh;  
+    height: auto;
+}
+
+
+#s2022{
+    position: relative;
+    top: 95vh;  
+    height: auto; 
+}
+
+
+
+#p2016{
+    top: 40vh;
+
+}
+
+#p2017{
+    top: 75vh;
+}
+
+#p2018{
+    top: 120vh;
+}
+
+#p2022{
+    top: 175vh;
+}
+
