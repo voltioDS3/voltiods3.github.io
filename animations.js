@@ -6,7 +6,7 @@ console.log(window.innerHeight)
 function elementVisible(element){
     let elementBox = element.getBoundingClientRect();
     let deltaDistance = -300;
-    console.log(elementBox.top - window.innerHeight)
+    // console.log(elementBox.top - window.innerHeight)
     if(elementBox.top - window.innerHeight < deltaDistance){
 
         return true;

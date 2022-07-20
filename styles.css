@@ -196,6 +196,7 @@ div{
     position: fixed;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .blank{
@@ -343,7 +344,7 @@ div{
 
 .slide_3{
     position: relative;
-    height: 250vh;
+    height: 220vh;
     background-color: #18978F;
     display: flex;
     flex-direction: row;
@@ -507,3 +508,12 @@ q{
     top: 175vh;
 }
 
+
+
+.slide_4{
+    
+        position: relative;
+        height: 100vh;
+        background-color: #2C3333;
+        
+}
