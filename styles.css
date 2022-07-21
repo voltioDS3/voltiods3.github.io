@@ -15,9 +15,8 @@
 @font-face {
  
     font-family: 'Alliance';
-    src:
-        url('./fonts/AllianceNo1-Bold.eot') format('embedded-opentype'),
-        url('./fonts/AllianceNo1-Bold.woff2') format('woff2'),
+    src: url('./fonts/AllianceNo1-SemiBold.eot');
+    src:url('./fonts/AllianceNo1-Bold.woff2') format('woff2'),
         url('./fonts/AllianceNo1-Bold.woff') format('woff'),
         url('./fonts/AllianceNo1-Bold.ttf') format('truetype');
     font-weight: bold;
@@ -25,9 +24,8 @@
 }
 @font-face {
     font-family: 'Alliance';
-    src:
-    url('./fonts/AllianceNo1-SemiBold.eot') format('embedded-opentype'),
-    url('./fonts/AllianceNo1-SemiBold.woff2') format('woff2'),
+    src: url('./fonts/AllianceNo1-SemiBold.eot');
+    src: url('./fonts/AllianceNo1-SemiBold.woff2') format('woff2'),
     url('./fonts/AllianceNo1-SemiBold.woff') format('woff'),
     url('./fonts/AllianceNo1-SemiBold.ttf') format('truetype');
     font-weight: 600;
