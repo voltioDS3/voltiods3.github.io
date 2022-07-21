@@ -42,7 +42,7 @@ loop: true})},2000);
 
 setTimeout(function(){
     var typed = new Typed(".dinamic-type-3",
-    {strings: ['Python', 'JavaScript', 'HTML/CSS', 'Fusion360', 'Photoshop'],
+    {strings: ['Python', 'JavaScript', 'HTML/CSS', 'Fusion360', 'Photoshop', "Premiere Pro", 'AfterEffects'],
 typeSpeed:90,
 backSpeed: 90,
 startDelay:500,
