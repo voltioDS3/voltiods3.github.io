@@ -36,10 +36,10 @@
 @font-face {
     font-family: 'Alliance';
     src:
-    url('./fonts/AllianceNo1-regular.eot') format('embedded-opentype'),
-    url('./fonts/AllianceNo1-regular.woff2') format('woff2'),
-    url('./fonts/AllianceNo1-regular.woff') format('woff'),
-    url('./fonts/AllianceNo1-regular.ttf') format('truetype');
+    url('./fonts/AllianceNo1-Regular.eot') format('embedded-opentype'),
+    url('./fonts/AllianceNo1-Regular.woff2') format('woff2'),
+    url('./fonts/AllianceNo1-Regular.woff') format('woff'),
+    url('./fonts/AllianceNo1-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
