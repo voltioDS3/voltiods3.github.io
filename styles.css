@@ -536,12 +536,14 @@ q{
     display: flex;
     flex-direction: row;
     width: 60%;
-    height: 90%;
+    height: 70%;
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 6vh 1vh;
     position: relative;
     top: 10vh;
+  
+    
 }
 
 .logo{
@@ -563,7 +565,16 @@ q{
     background: var(--hex-color);
     transition: all 1s ease;
     
-    
+    perspective: 1000px
+}
+
+.logo-container-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+ 
 }
 
 
@@ -590,3 +601,14 @@ q{
   .programs-text{
     width: 40%;
   }
+
+  .middle{
+    top: 2vh;
+    left: calc(var(--hex-width-half) + 0.5vh);
+  }
+
+  .bottom{
+    top: calc(var(--hex-height-half) - 3.5vh);
+    
+  }
+
