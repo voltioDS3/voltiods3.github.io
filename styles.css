@@ -1,6 +1,16 @@
 
 /* general parameters */
 
+
+:root {
+    --hex-height: 15vh;
+    --hex-width:  calc(var(--hex-height) * 1.73);
+    --hex-width-half: calc(var(--hex-width) / 2);
+    --hex-height-half: calc(var(--hex-height) / 2);
+    --logo-height: 15vh;
+    --hex-color: #7F5283;
+  }
+
 @font-face {
     font-family: 'Alliance No.1';
     src: url('AllianceNo1-ExtraBoldItalic.eot');
@@ -515,5 +525,68 @@ q{
         position: relative;
         height: 100vh;
         background-color: #2C3333;
-        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
 }
+
+
+
+.programs-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 90%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 6vh 1vh;
+    position: relative;
+    top: 10vh;
+}
+
+.logo{
+    height: var(--logo-height);
+    position:relative;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+.logo-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: var(--hex-width);
+    height: var(--hex-height);
+    background: var(--hex-color);
+    transition: all 1s ease;
+    
+    
+}
+
+
+.logo-container::before,
+.logo-container::after {
+  content: "";
+  position: absolute;
+  border-left: var(--hex-width-half) solid transparent;
+  border-right: var(--hex-width-half) solid transparent;
+}
+
+.logo-container::before {
+    bottom: 100%;
+    border-bottom: var(--hex-height-half) solid var(--hex-color);
+    position: absolute;
+  }
+
+  .logo-container::after {
+    top: 100%;
+    border-top: var(--hex-height-half) solid var(--hex-color);
+    position: absolute;
+  }
+
+  .programs-text{
+    width: 40%;
+  }
