@@ -6,7 +6,15 @@ console.log(window.innerHeight)
 function elementVisible(element){
     let elementBox = element.getBoundingClientRect();
     let deltaDistance = -200;
-    // console.log(elementBox.top - window.innerHeight)
+    console.log(elementBox.top - window.innerHeight)
+    if(element.classList.contains('early')){
+        if(elementBox.top - window.innerHeight < deltaDistance + 250){
+
+            return true;
+        } else if(elementBox.top - window.innerHeight > deltaDistance + 250){
+            return false;
+        }
+    }
     if(elementBox.top - window.innerHeight < deltaDistance){
 
         return true;
