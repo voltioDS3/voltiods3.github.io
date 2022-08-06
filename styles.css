@@ -3,11 +3,11 @@
 
 
 :root {
-    --hex-height: 15vh;
+    --hex-height: 15vmin;
     --hex-width:  calc(var(--hex-height) * 1.73);
     --hex-width-half: calc(var(--hex-width) / 2);
     --hex-height-half: calc(var(--hex-height) / 2);
-    --logo-height: 15vh;
+    --logo-height: 15vmin;
     --hex-color: #7F5283;
   }
 
@@ -56,7 +56,7 @@
     background: linear-gradient(219deg, #7776ff, #ae2cf1);
     background-size: 400% 400%;
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     -webkit-animation: AnimationName 6s ease infinite;
     -moz-animation: AnimationName 6s ease infinite;
     animation: AnimationName 6s ease infinite;
@@ -68,7 +68,7 @@
 
 .blank{
     display: flex;
-    height: 100vh;
+    height: 100vmin;
     width: 100%;
     position: relative;
 }
@@ -93,8 +93,8 @@
 
 
 #scroll-down{
-    margin-top: 20vh;
-    width: 10vh;
+    margin-top: 20vmin;
+    width: 10vmin;
     filter: invert(100%) sepia(67%) saturate(1%) hue-rotate(96deg) brightness(105%) contrast(100%);
 }
 
@@ -121,20 +121,21 @@
 .slide_1 h1{
     font-family: "Alliance";
     font-weight: bold;
-    font-size: 10vh;
+    font-size: 10vmin;
     color: white;
-    margin-top: 10vh;
+    margin-top: 10vmin;
+    flex-wrap: wrap;
     
 }
 
 .slide_1 p{
     font-family: "Alliance";
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 3vmin;
     color: #dcdada;
     text-align: center;
     width: 50%;
-    margin-top: 1vh;
+    margin-top: 1vmin;
 }
 
 
@@ -142,12 +143,12 @@
     display: flex;
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 100vmin;
     background-color: #2C3333;
     
 }
 .slide_2 img{
-    height:100vh;
+    height:100vmin;
     
     
     transition: all 2s ease;
@@ -157,7 +158,7 @@
 .text_section{
     
     flex-direction: column;
-    height: 100vh;
+    height: 100vmin;
     
     transition: all 1.5s ease;
     transition-delay: 0.5s;
@@ -167,35 +168,35 @@
 .text_container{
     flex-direction: column;
     width: 70%;
-    margin-left: 5vh;
-    margin-top: 5vh;
+    margin-left: 5vmin;
+    margin-top: 5vmin;
 }
 .text_section h2{
     font-family: "Alliance";
     font-weight: bold; 
-    font-size: 2vh; 
+    font-size: 2vmin; 
     color: #7776ff;
     
 }
 .text_section h1{
     font-family: "Source Code Pro";
     font-weight: bold;  
-    font-size: 6vh;
+    font-size: 6vmin;
     color: white;
 }
 .text_section p{
     color:whitesmoke;
     font-family: "Alliance";
     font-weight: normal;  
-    margin-top: 4vh;
-    font-size: 2.5vh;
+    margin-top: 4vmin;
+    font-size: 2.5vmin;
     
 }
 
 
 .timeline-banner{
     position: relative;
-    height: 100vh;
+    height: 100vmin;
     background-color: white;
     display: flex;
     align-items: center;
@@ -206,7 +207,7 @@
 .timeline-banner h1{
     font-family: "Alliance";
     font-weight: bold; 
-    font-size: 5vh; 
+    font-size: 5vmin; 
     color: black;
     transition: all 1s ease;
     
@@ -216,7 +217,7 @@
 .slide_3{
     
     position: relative;
-    height: 220vh;
+    height: 220vmin;
     background-color: #18978F;
     display: flex;
     flex-direction: row;
@@ -228,10 +229,10 @@
 .fade-in{
     position: relative;
     opacity: 0;
-    transform: translate(0,10vh);
-    -webkit-transform: translate(0,10vh); /** Chrome & Safari **/
-    -o-transform: translate(0,10vh); /** Opera **/
-    -moz-transform: translate(0,10vh); 
+    transform: translate(0,10vmin);
+    -webkit-transform: translate(0,10vmin); /** Chrome & Safari **/
+    -o-transform: translate(0,10vmin); /** Opera **/
+    -moz-transform: translate(0,10vmin); 
 }
 
 .custom-shape-divider-bottom-1658180740 {
@@ -266,13 +267,13 @@
 
 .left-section{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 5vmin;
     gap: 30px;
     width: 49.5%;
 }
 .right-section{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 5vmin;
     gap: 30px;
     width: 49.5%;
 }
@@ -283,8 +284,8 @@
     
     
     background-color: #54BAB9;
-    border-radius: 5vh;
-    padding: 3vh;
+    border-radius: 5vmin;
+    padding: 3vmin;
     
     width: 70%;
     transition: all 1s ease;
@@ -295,7 +296,7 @@
 .slide_3 h1{
     font-family: "Source Code Pro";
     font-weight: bold;  
-    font-size: 5vh;
+    font-size: 5vmin;
     color: white;
     margin-bottom: 0;
 }
@@ -305,7 +306,7 @@
     font-family: "Alliance";
     font-weight: normal;  
     
-    font-size: 2.5vh;
+    font-size: 2.5vmin;
 }
 .timeline{
     width: 0.5%;
@@ -319,11 +320,11 @@
 
 .timeline-point{
     position: absolute;
-    top: 5vh;
+    top: 5vmin;
     left: 50%;
     transform: translateX(-50%);
-    width: 3vh;
-    height: 3vh;
+    width: 3vmin;
+    height: 3vmin;
     background: white;
     border-radius: 50%;
    
@@ -332,7 +333,7 @@
 .slide_3 h2{
     font-family: "Alliance";
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 3vmin;
     color: white;
 }
 
@@ -342,46 +343,46 @@ q{
 
 #s2016{
     position: relative;
-    top: 40vh;  
+    top: 40vmin;  
     height: auto;
 }
 
 #s2017{
     position: relative;
-    top: 40vh;  
+    top: 40vmin;  
     height: auto;
 }
 
 #s2018{
     position: relative;
-    top: 85vh;  
+    top: 85vmin;  
     height: auto;
 }
 
 
 #s2022{
     position: relative;
-    top: 95vh;  
+    top: 95vmin;  
     height: auto; 
 }
 
 
 
 #p2016{
-    top: 40vh;
+    top: 40vmin;
 
 }
 
 #p2017{
-    top: 75vh;
+    top: 75vmin;
 }
 
 #p2018{
-    top: 120vh;
+    top: 120vmin;
 }
 
 #p2022{
-    top: 175vh;
+    top: 175vmin;
 }
 
 
@@ -391,7 +392,7 @@ q{
         align-items: center;
         flex-direction: row;
         position: relative;
-        min-height: 140vh;
+        min-height: 140vmin;
         background-color: #2C3333;
         width: 100%;
        
@@ -423,10 +424,10 @@ q{
 
 .main {
     align-self: flex-start;
-    margin-top: 3vh;
-    margin-left: 3vh;
+    margin-top: 3vmin;
+    margin-left: 3vmin;
     display:flex;
-    --s: 25vh;  /* size  */
+    --s: 25vmin;  /* size  */
     --m: 4px;    /* margin */
     --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px); 
     max-width: 50%;
@@ -476,7 +477,7 @@ q{
   .text-container h1{
     font-family: "Source Code Pro";
     font-weight: bold;  
-    font-size: 6vh;
+    font-size: 6vmin;
     color: white;
   }
 
@@ -484,13 +485,110 @@ q{
     color:whitesmoke;
     font-family: "Alliance";
     font-weight: normal;  
-    margin-top: 4vh;
-    font-size: 2.5vh;
+    margin-top: 4vmin;
+    font-size: 2.5vmin;
   }
 
   .text-container h2{
     font-family: "Alliance";
     font-weight: bold; 
-    font-size: 2vh; 
+    font-size: 2vmin; 
     color: #7776ff;
   }
+
+  .slide_5{
+    position: relative;
+    
+    
+    width: 100%;
+    height: 50vmin;
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slide_5 h1{
+    font-family: "Alliance";
+    font-weight: bold; 
+    font-size: 5vmin; 
+    color: black;
+    transition: all 1s ease;
+    align-self: center;
+    left: 50%;
+    
+  }
+
+
+  .slide_6 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200vh;
+    background-color: #18978F;
+    flex-wrap: wrap;
+    
+    
+  }
+
+
+.proyect-container{
+    flex: 0 0 33.333333%;
+    
+    transition: all 0.5s ease;
+}
+
+
+
+#car{
+    background-image: url('/photos/carProyect.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#red{
+    width: 100%;
+    background-color: #003865;
+}
+
+#printers{
+    background-image: url('/photos/3dLogo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#blue{
+    width: 100%;
+    background-color: #EF5B0C;
+}
+
+#league{
+    background-image: url('/photos/leagueProyect.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#color3{
+    width: 100%;
+    background-color: #D4F6CC;
+}
+
+#arm{
+    background-image: url('/photos/armProyect.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#color4{
+    width: 100%;
+    background-color: #3CCF4E;
+}
+
+#ai{
+    background-image: url('/photos/aiProyect.png');
+    background-position: center;
+    background-size: cover;
+}
