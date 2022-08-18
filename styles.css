@@ -584,7 +584,7 @@ q{
     height:100%;
     top:0;
     left: 0;
-  
+    text-decoration: none;
     z-index: 1;
   
     /* fixes overlap error in IE7/8, 
@@ -682,3 +682,90 @@ q{
     background-position: center;
     background-size: cover;
 }
+
+@media (max-width: 800px) {
+    .slide_2 img {
+      display: none;
+    }
+
+    .slide_1 h1{
+        font-size: 6vmin;
+    }
+
+    .slide_3{
+        height: 240vw;
+    }
+    .slide_3 h1{
+        font-family: "Source Code Pro";
+        font-weight: bold;  
+        font-size: 3vmin;
+        color: white;
+        margin-bottom: 0;
+    }
+    
+    .slide_3 p{
+        color:whitesmoke;
+        font-family: "Alliance";
+        font-weight: normal;  
+        
+        font-size: 2.5vmin;
+    }
+
+   
+
+    #s2016{
+        position: relative;
+        top: 35vw;  
+        height: auto;
+    }
+    
+    #s2017{
+        position: relative;
+        top: 16vw; 
+        height: auto;
+    }
+    
+    #s2018{
+        position: relative;
+        top: 67vw;  
+        height: auto;
+    }
+    
+    
+    #s2022{
+        position: relative;
+        top: 50vw;  
+        height: auto; 
+    }
+    
+    
+    
+    #p2016{
+        top: 40vmin;
+    
+    }
+    
+    #p2017{
+        top: 75vmin;
+    }
+    
+    #p2018{
+        top: 120vmin;
+    }
+    
+    #p2022{
+        top: 175vmin;
+    }
+    .blank{
+        display: flex;
+        height: 100vmin;
+        width: 100%;
+        position: relative;
+        background-color: none;
+    }
+    .logo-container{
+        display: none;
+    }
+  }
+
+   
