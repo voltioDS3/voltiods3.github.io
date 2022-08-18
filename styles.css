@@ -149,7 +149,7 @@
 }
 .slide_2 img{
     height:100vmin;
-    
+    max-width: 50%;
     
     transition: all 2s ease;
 }
@@ -683,7 +683,7 @@ q{
     background-size: cover;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .slide_2 img {
       display: none;
     }
