@@ -533,7 +533,7 @@ q{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 200vh;
+    height: 100vw;
     background-color: #18978F;
     flex-wrap: wrap;
     
@@ -543,9 +543,10 @@ q{
 
 .proyect-container{
     flex: 0 0 33.333333%;
-    
+    height: 33.33333vw;
+    width: 33.33333%;
     transition: all 0.5s ease;
-    height: 33.33333%;
+   
 }
 
 
@@ -565,7 +566,7 @@ q{
   
     font-family: "Alliance";
     font-weight: bold;
-    font-size: 10vmin;
+    font-size: 9vmin;
     color: white;
    
     flex-wrap: wrap;
@@ -772,6 +773,27 @@ q{
     .logo-container{
         display: none;
     }
+    .text-container{
+        
+        
+    transform: translateX(-10%);
+    }
+    .proyect-container{
+        flex: 0 0 33.333333%;
+        
+        transition: all 0.5s ease;
+        height: 33.33333vw;
+        width: 33.33333%;
+    }
+    .proyect-container h1{
+        font-size: 6vmin;
+    }
+
+    .proyect-text-container p{
+        font-size: 2vmin;
+    }
+    
+    
   }
 
    
