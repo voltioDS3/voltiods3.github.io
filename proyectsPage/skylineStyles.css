@@ -143,6 +143,7 @@
 .content img{
     align-self: center;
     min-width: 60%;
+    max-width: 100%;
     padding-top: 2vmin;
     
 }
