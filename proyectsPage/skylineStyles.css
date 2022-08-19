@@ -4,18 +4,124 @@
     padding: 0;
 }
 
+@font-face {
+ 
+    font-family: 'Alliance';
+    src: url('../fonts/AllianceNo1-SemiBold.eot');
+    src:url('../fonts/AllianceNo1-Bold.woff2') format('woff2'),
+        url('../fonts/AllianceNo1-Bold.woff') format('woff'),
+        url('../fonts/AllianceNo1-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alliance';
+    src: url('../fonts/AllianceNo1-SemiBold.eot');
+    src: url('../fonts/AllianceNo1-SemiBold.woff2') format('woff2'),
+    url('../fonts/AllianceNo1-SemiBold.woff') format('woff'),
+    url('../fonts/AllianceNo1-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alliance';
+    src: url(../fonts/AllianceNo1-Regular.eot);
+    src: url('../fonts/AllianceNo1-Regular.woff2') format('woff2'),
+    url('../fonts/AllianceNo1-Regular.woff') format('woff'),
+    url('../fonts/AllianceNo1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .nav-bar{
-    background-color: #2C3333;
+    background-color: #7776ff;
     width: 100%;
     height: 15vmin;
 }
 .banner{
     width: 100%;
     height: 80vmin;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .banner img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.banner-image{
+    max-width: 70vw;
+    height: 100%;
+    width: 70vw;
+}
+.banner-text{
+    height: 100%;
+    width: 30vw;
+    background-color: #2C3333;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+.banner-text h1{
+    color: whitesmoke;
+    font-family: "Alliance";
+    font-size: calc(2vw + .5rem);
+    font-weight: bold;
+    padding-left: 2.5vmin;
+}
+
+.banner-text p{
+    color: whitesmoke;
+    font-family: "Alliance";
+   font-size: calc(0.5vw + .5rem);
+    font-weight: regular;
+    padding-left: 2.5vmin;
+}
+
+#upper-text{
+    font-family: "Alliance";
+    font-weight: bold; 
+    color: #7776ff;
+    font-size: calc(0.5vw + .5rem);
+}
+
+
+
+@media (max-width: 1000px){
+    .banner{
+        width: 100%;
+        height: 100vmin;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .banner-image{
+        max-width: 100vw;
+
+        height: 60%;
+        width: 100vw;
+    }
+    .banner-text{
+        height: 40%;
+        width: 100vw;
+        background-color: #2C3333;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+        
+    }
+
+    .banner-text h1, p{
+       
+        text-align: center;
+        
+    }
+    
 }
