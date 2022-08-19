@@ -108,12 +108,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .content{
     margin-top: 5vh;
-    width: 60%;
-  
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .content h1{
@@ -137,6 +140,37 @@
    
 }
 
+.content img{
+    align-self: center;
+    min-width: 60%;
+    padding-top: 2vmin;
+    
+}
+
+.image-large{
+    width: 100%;
+}
+
+.image-bottom {
+    
+    margin-top: 0vmin;
+    color: gray;
+    opacity: 60%;
+    color: black;
+    font-family: "Alliance";
+    font-size: calc(0.5vw + .5rem);
+    font-weight: regular;
+    line-height: 3vmin;
+    align-self: center;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;  
+}
+
+.image-bottom a{
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 1000px){
     .banner{
