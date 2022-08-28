@@ -57,10 +57,60 @@
         </p>
         <img src="../photos/leagueproyect/requestInteraction.png">
         <span class="image-bottom"> Codigo para obtener una lista de jugadores segun su rango </span>
+        <p>
+            Finalmente, despues de muchas versiones, programe un script que recopila informacion de miles
+            de partidas de jugadores de alto rango y devuelve un archivo CSV con la siguiente estructura:
+        </p>
+        <img src="../photos/leagueproyect/csvFile.png">
+        <span class="image-bottom"> archivo csv con informacion recopilada </span>
+
+        <h1>Analisis de informacion</h1>
+        <p>
+           Con la informacion ya ordenada en un CSV, era momento de analizarla para poder
+           encontrar que objetos y cuales runas eran mejores para un determinado personaje. Para esto 
+           utilize pandas y numpy, escribi un script que toma como entrada un Campeon y su rol en el juego
+           y devuelve sus items, runas y hechizos mas populares con mayor porcentaje de victorias.
+        </p>
+        <img src="../photos/leagueproyect/analizeData.png">
+        <span class="image-bottom"> Extracto de codigo del archivo analize_data.py</span>
+        <h1>Creacion de imagenes</h1>
+        <p>
+            Con la parte del analisis, podia pasar a la creacion de la imagen que tendra la informacion
+            clara para el usuario(dado que el archivo que analiza devuelve los IDs, los cuales son 
+            incomprensibles). Para este script use la libreria Pillow, la cual es util para todo lo 
+            relacionado con imagenes en Python. <br><br>
+            El archivo interactua con el script de analisis para crear la imagen de un el personaje 
+            deseado, finalmente devuelve un archivo png que se ve asi:
+
+        </p>
+        <img src="../photos/leagueproyect/items.png">
+        <span class="image-bottom"> objetos, runas y hechizos recomendados para el campeon Ezreal</span>
+
+        <h1>Bot de Discord</h1>
+        <p>
+            Lo ultimo por hacer era programar un archivo que permitiera interactuar con Discord, 
+            necesitaba mandar la imagen por el canal de texto dependiendo de el campeon que el usuario
+            necesitara, para esto utilize la libreria Discord.py y cree un bot en el sitio de Discord.
+        </p>
+        <img src="../photos/leagueproyect/discordPy.png">
+        <span class="image-bottom"> Extracto de codigo del archivo discord_bot.py</span>
         
+
+        <h1>Resultado final</h1>
+        <p>
+            Al combinar todos los archivos, el usuario es capaz de incluir el bot a su servidor y 
+            hacer consultas sobre los objetos de determinado campeon usando el comando .ai [nombre campeon]
+        </p>
+
+        <img src="../photos/leagueproyect/finalResult.png">
      
-        <h1>lorem impsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quae quasi perferendis nesciunt pariatur culpa cupiditate, dolores labore nam quia odio ullam dolore natus cum nobis veritatis error ipsum expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit beatae molestias non, iste hic, aut iure nostrum, adipisci perspiciatis corporis ea. Consequatur recusandae ipsam cupiditate cum autem animi nesciunt voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nulla ullam, totam voluptate, omnis asperiores incidunt animi facere quidem consequuntur itaque nam fugit neque veritatis nemo harum. Inventore, maxime? Inventore.</p>
+        <h1>Creacion de imagenes</h1>
+        <p>
+            Con la parte del analisis, podia pasar a la creacion de la imagen que tendra la informacion
+            clara para el usuario(dado que el archivo que analiza devuelve los IDs, los cuales son 
+            incomprensibles)
+
+        </p>
     </div>
 
 </div>
