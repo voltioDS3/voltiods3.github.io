@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-witdh, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='leagueStyles.css'>
+
+</head>
+
+<body>
+<div class="nav-bar"> <a href="../index.html"><h1>Already_Dev</h1></a></div>
+<div class="banner"> 
+    <div class="banner-image"><img src="../photos/printerProyect/banner.webp"></div>
+    
+    <div class="banner-text">
+        <p id="upper-text"> 3D - Fusion360 - Cura - Construccion</p>
+        <h1 id="title">Impresion 3D</h1>
+        <p id="subtitle">
+            Todo lo relacionado con mi primera impresora , hasta el Emprendimiento
+        </p>
+    </div>
+</div>
+<div class="main-container">
+    <div class="content">
+
+        <h1>Objetivo: </h1>
+        <p>
+        Este proyecto nacio con el objetivo de encontrar una forma para conocer que Objetos, runas y otras cosas
+        se estaban usando con cualquier personaje de el juego League Of Legends. Apesar de que ya existen
+        sitios web y aplicaciones que tienen el mismo objetivo, necesitaba una solucion que no necesitara instalar
+        programas externos o abrir el navegador, dado a que no todos los computadores pueden jugar, 
+        utilizar discord(para llamadas) y abrir una pestana en el navegador para buscar la informacion 
+        que necesitan.
+        <br>
+        <br>
+        Ademas estaba en busqueda de un proyecto que me permitiera mejorar mis habilidades con Python, 
+         Pandas(para procesar datos) y el trabajo con APIs
+        </p>
+
+        <h1>Recopilacion de informacion</h1>
+        <p>
+        Para saber que items y runas convenian mas, era necesario saber lo que los jugadores de rango mas
+        alto estaban usando con los mas de 140 personajes, aqui es donde la API de league of legends
+        entra en juego. Esta API contiene toda la informacion del juego como historial de partidas,
+        estadisticas competitivas, partidas en vivo y mucho mas. En el sitio <a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
+        se encuentra toda la informacion sobre como usarla y los requisitos.
+
+        <br><br>
+        Como la API de riot es una web API, tuve que aprender a interactuar con esta usando la libreria request,
+        apesar de que existen librerias especificas para interactuar con la API como lo son
+        riotwatcher, cassiopeia y pyot. Como trabaje con la libreria request tuve que hacer todo desde 0,
+        incluyendo el manejo de errores.
+        </p>
+        <img src="../photos/leagueproyect/requestInteraction.png">
+        <span class="image-bottom"> Codigo para obtener una lista de jugadores segun su rango </span>
+        <p>
+            Finalmente, despues de muchas versiones, programe un script que recopila informacion de miles
+            de partidas de jugadores de alto rango y devuelve un archivo CSV con la siguiente estructura:
+        </p>
+        <img src="../photos/leagueproyect/csvFile.png">
+        <span class="image-bottom"> archivo csv con informacion recopilada </span>
+
+        <h1>Analisis de informacion</h1>
+        <p>
+           Con la informacion ya ordenada en un CSV, era momento de analizarla para poder
+           encontrar que objetos y cuales runas eran mejores para un determinado personaje. Para esto 
+           utilize pandas y numpy, escribi un script que toma como entrada un Campeon y su rol en el juego
+           y devuelve sus items, runas y hechizos mas populares con mayor porcentaje de victorias.
+        </p>
+        <img src="../photos/leagueproyect/analizeData.png">
+        <span class="image-bottom"> Extracto de codigo del archivo analize_data.py</span>
+        <h1>Creacion de imagenes</h1>
+        <p>
+            Con la parte del analisis, podia pasar a la creacion de la imagen que tendra la informacion
+            clara para el usuario(dado que el archivo que analiza devuelve los IDs, los cuales son 
+            incomprensibles). Para este script use la libreria Pillow, la cual es util para todo lo 
+            relacionado con imagenes en Python. <br><br>
+            El archivo interactua con el script de analisis para crear la imagen de un el personaje 
+            deseado, finalmente devuelve un archivo png que se ve asi:
+
+        </p>
+        <img src="../photos/leagueproyect/items.png">
+        <span class="image-bottom"> objetos, runas y hechizos recomendados para el campeon Ezreal</span>
+
+        <h1>Bot de Discord</h1>
+        <p>
+            Lo ultimo por hacer era programar un archivo que permitiera interactuar con Discord, 
+            necesitaba mandar la imagen por el canal de texto dependiendo de el campeon que el usuario
+            necesitara, para esto utilize la libreria Discord.py y cree un bot en el sitio de Discord.
+        </p>
+        <img src="../photos/leagueproyect/discordPy.png">
+        <span class="image-bottom"> Extracto de codigo del archivo discord_bot.py</span>
+        
+
+        <h1>Resultado final</h1>
+        <p>
+            Al combinar todos los archivos, el usuario es capaz de incluir el bot a su servidor y 
+            hacer consultas sobre los objetos de determinado campeon usando el comando .ai [nombre campeon]:
+        </p>
+
+        <img src="../photos/leagueproyect/finalResult.png">
+        <p>
+            Todos los archivos y el codigo estan publicados en mi 
+            repositorio <a href="https://github.com/Already-Dead-24/ExtractData.git" target="_blank">https://github.com/Already-Dead-24/ExtractData.git</a>
+        </p>
+
+       
+    </div>
+
+</div>
+</body>
+</html>

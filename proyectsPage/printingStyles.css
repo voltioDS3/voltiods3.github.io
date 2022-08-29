@@ -1,0 +1,242 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+ 
+    font-family: 'Alliance';
+    src: url('../fonts/AllianceNo1-SemiBold.eot');
+    src:url('../fonts/AllianceNo1-Bold.woff2') format('woff2'),
+        url('../fonts/AllianceNo1-Bold.woff') format('woff'),
+        url('../fonts/AllianceNo1-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alliance';
+    src: url('../fonts/AllianceNo1-SemiBold.eot');
+    src: url('../fonts/AllianceNo1-SemiBold.woff2') format('woff2'),
+    url('../fonts/AllianceNo1-SemiBold.woff') format('woff'),
+    url('../fonts/AllianceNo1-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alliance';
+    src: url(../fonts/AllianceNo1-Regular.eot);
+    src: url('../fonts/AllianceNo1-Regular.woff2') format('woff2'),
+    url('../fonts/AllianceNo1-Regular.woff') format('woff'),
+    url('../fonts/AllianceNo1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-bar{
+    background-color: #7776ff;
+    width: 100%;
+    height: 15vmin;
+}
+
+.nav-bar h1{
+    color: whitesmoke;
+    font-family: "Alliance";
+    font-size: calc(2vw + .5rem);
+    font-weight: bold;
+    padding-left: 2.5vmin;
+    text-align: center;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+.banner{
+    width: 100%;
+    height: 80vmin;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image{
+    max-width: 70vw;
+    height: 100%;
+    width: 70vw;
+}
+.banner-text{
+    height: 100%;
+    width: 30vw;
+    background-color: #2C3333;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+.banner-text h1{
+    color: whitesmoke;
+    font-family: "Alliance";
+    font-size: calc(2.25vw + .5rem);
+    font-weight: bold;
+    padding-left: 2.5vmin;
+    padding-right: 2.5vmin;
+}
+
+.banner-text p{
+    color: gray;
+    font-family: "Alliance";
+   font-size: calc(0.75vw + .5rem);
+    font-weight: regular;
+    padding-left: 2.5vmin;
+    padding-right: 2.5vmin;
+}
+
+#upper-text{
+    font-family: "Alliance";
+    font-weight: bold; 
+    color: #7776ff;
+    font-size: calc(0.75vw + .5rem);
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.content{
+    margin-top: 5vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.content h1{
+    margin-top: 5vh;
+    color: black;
+    font-family: "Alliance";
+    font-size: calc(1.25vw + .5rem);
+    font-weight: bold;
+   
+
+}
+
+.content p{
+    margin-top: 2vmin;
+    color: black;
+    font-family: "Alliance";
+    font-size: calc(0.5vw + .5rem);
+    font-weight: regular;
+    line-height: 3vmin;
+    text-align: justify;
+   
+}
+
+.content img{
+    align-self: center;
+    min-width: 60%;
+    max-width: 100%;
+    padding-top: 2vmin;
+    
+}
+
+.image-large{
+    width: 100%;
+}
+
+.image-bottom {
+    
+    margin-top: 0vmin;
+    color: gray;
+    opacity: 60%;
+    color: black;
+    font-family: "Alliance";
+    font-size: calc(0.5vw + .5rem);
+    font-weight: regular;
+    line-height: 3vmin;
+    align-self: center;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;  
+}
+
+.image-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1000px){
+    .banner{
+        width: 100%;
+        height: 100vmin;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .banner-image{
+        max-width: 100vw;
+
+        height: 60%;
+        width: 100vw;
+    }
+    .banner-text{
+        height: 40%;
+        width: 100vw;
+        background-color: #2C3333;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+        
+    }
+
+    .banner-text h1, p{
+       
+        text-align: center;
+        
+    }
+    .banner-text p{
+        font-size: calc(1vw + .5rem);
+        
+    }
+    .banner-text h1{
+      
+        font-size: calc(6vw + .5rem);
+    }
+    .banner-image{
+        display: inline-block; /* change the default display type to inline-block */
+        overflow: hidden; 
+    }
+    .banner img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+       
+    }
+
+    #upper-text{
+      
+        font-size: calc(1.5vw + .5rem);
+    }
+    
+    .content{
+        margin-top: 5vh;
+        width: 80%;
+       
+    }
+}
