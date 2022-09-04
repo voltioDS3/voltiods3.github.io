@@ -16,11 +16,12 @@
     <div class="banner-image"><img src="../photos/leagueproyect/banner.png"></div>
     
     <div class="banner-text">
-        <p id="upper-text"> Programacion - Python - Datos - API</p>
+        <p id="upper-text"> Programación - Python - Datos - API</p>
         <h1 id="title">League Bot</h1>
-        <p id="subtitle">Bot para Discord hecho en python, interactua con 
-            la API del juego League Of Legends para obtener informacion,
-            analizarla y presentarla
+        <p id="subtitle">Bot para Discord hecho en Python, interactúa con la API del juego League
+            Of
+            Legends
+            para obtener información, analizarla y presentarla
         </p>
     </div>
 </div>
@@ -29,83 +30,76 @@
 
         <h1>Objetivo: </h1>
         <p>
-        Este proyecto nacio con el objetivo de encontrar una forma para conocer que Objetos, runas y otras cosas
-        se estaban usando con cualquier personaje de el juego League Of Legends. Apesar de que ya existen
-        sitios web y aplicaciones que tienen el mismo objetivo, necesitaba una solucion que no necesitara instalar
-        programas externos o abrir el navegador, dado a que no todos los computadores pueden jugar, 
-        utilizar discord(para llamadas) y abrir una pestana en el navegador para buscar la informacion 
-        que necesitan.
+            Este proyecto nació con el objetivo de encontrar una forma para conocer que Objetos, runas y otras cosas se estaban usando con cualquier personaje del juego League
+            Of
+            Legends
+           . A pesar de que ya existen sitios web y aplicaciones que tienen el mismo objetivo, necesitaba una solución que no necesitara instalar programas externos o abrir el navegador, dado que no todos los computadores pueden jugar, utilizar Discord(para llamadas) y abrir una pestaña en el navegador para buscar la información que necesitan.
         <br>
         <br>
-        Ademas estaba en busqueda de un proyecto que me permitiera mejorar mis habilidades con Python, 
-         Pandas(para procesar datos) y el trabajo con APIs
+        Además estaba en búsqueda de un proyecto que me permitiera mejorar mis habilidades con Python, Pandas(para procesar datos) y el trabajo con APIs
         </p>
 
-        <h1>Recopilacion de informacion</h1>
+        <h1>Recopilación de información</h1>
         <p>
-        Para saber que items y runas convenian mas, era necesario saber lo que los jugadores de rango mas
-        alto estaban usando con los mas de 140 personajes, aqui es donde la API de league of legends
-        entra en juego. Esta API contiene toda la informacion del juego como historial de partidas,
-        estadisticas competitivas, partidas en vivo y mucho mas. En el sitio <a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
-        se encuentra toda la informacion sobre como usarla y los requisitos.
+            Para saber que ítems y runas convenían más, era necesario saber lo que los jugadores de rango más alto estaban usando con los más de 140 personajes, aquí es donde la API de league
+            of
+            legends
+            entra en juego. Esta API contiene toda la información del juego como historial de partidas, estadísticas competitivas, partidas en vivo y mucho más. En el sitio <a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
+            se encuentra toda la información sobre como usarla y los requisitos.
 
         <br><br>
-        Como la API de riot es una web API, tuve que aprender a interactuar con esta usando la libreria request,
-        apesar de que existen librerias especificas para interactuar con la API como lo son
-        riotwatcher, cassiopeia y pyot. Como trabaje con la libreria request tuve que hacer todo desde 0,
-        incluyendo el manejo de errores.
+        Como la API de riot
+ es una web API, tuve que aprender a interactuar con esta usando la librería request
+, a pesar de que existen librerías especificas
+ para interactuar con la API como lo son riotwatcher
+, cassiopeia
+ y pyot
+. Como trabaje con la librería request
+ tuve que hacer todo desde 0, incluyendo el manejo de errores.
         </p>
         <img src="../photos/leagueproyect/requestInteraction.png">
-        <span class="image-bottom"> Codigo para obtener una lista de jugadores segun su rango </span>
+        <span class="image-bottom"> Código para obtener una lista de jugadores según su rango </span>
         <p>
-            Finalmente, despues de muchas versiones, programe un script que recopila informacion de miles
-            de partidas de jugadores de alto rango y devuelve un archivo CSV con la siguiente estructura:
+            Finalmente, después de muchas versiones, programe un script que recopila información de miles de partidas de jugadores de alto rango y devuelve un archivo CSV con la siguiente estructura:
+
         </p>
         <img src="../photos/leagueproyect/csvFile.png">
-        <span class="image-bottom"> archivo csv con informacion recopilada </span>
+        <span class="image-bottom"> Archivo CSV con información recopilada </span>
 
-        <h1>Analisis de informacion</h1>
+        <h1>Análisis de información</h1>
         <p>
-           Con la informacion ya ordenada en un CSV, era momento de analizarla para poder
-           encontrar que objetos y cuales runas eran mejores para un determinado personaje. Para esto 
-           utilize pandas y numpy, escribi un script que toma como entrada un Campeon y su rol en el juego
-           y devuelve sus items, runas y hechizos mas populares con mayor porcentaje de victorias.
+            Con la información ya ordenada en un CSV, era momento de analizarla para poder encontrar que objetos y cuáles runas eran mejores para un determinado personaje. Para esto utilicé pandas y NumPy, escribí un script que toma como entrada un Campeón y su rol en el juego y devuelve sus ítems, runas y hechizos más populares con mayor porcentaje de victorias.
         </p>
         <img src="../photos/leagueproyect/analizeData.png">
-        <span class="image-bottom"> Extracto de codigo del archivo analize_data.py</span>
-        <h1>Creacion de imagenes</h1>
+        <span class="image-bottom">Extracto de código del archivo analize_data.py</span>
+        <h1>Creación de imágenes</h1>
         <p>
-            Con la parte del analisis, podia pasar a la creacion de la imagen que tendra la informacion
-            clara para el usuario(dado que el archivo que analiza devuelve los IDs, los cuales son 
-            incomprensibles). Para este script use la libreria Pillow, la cual es util para todo lo 
-            relacionado con imagenes en Python. <br><br>
-            El archivo interactua con el script de analisis para crear la imagen de un el personaje 
-            deseado, finalmente devuelve un archivo png que se ve asi:
+            Con la parte del análisis, podía pasar a la creación de la imagen que tendrá la información clara para el usuario(dado que el archivo que analiza devuelve los IDs
+, los cuales son incomprensibles). Para este script usé la librería Pillow
+, la cual es útil para todo lo relacionado con imágenes en Python. <br><br>
+El archivo interactúa con el script de análisis para crear la imagen de un el personaje deseado, finalmente devuelve un archivo PNG que se ve así:
 
         </p>
         <img src="../photos/leagueproyect/items.png">
-        <span class="image-bottom"> objetos, runas y hechizos recomendados para el campeon Ezreal</span>
+        <span class="image-bottom"> Objetos, runas y hechizos recomendados para el campeón Ezreal</span>
 
         <h1>Bot de Discord</h1>
         <p>
-            Lo ultimo por hacer era programar un archivo que permitiera interactuar con Discord, 
-            necesitaba mandar la imagen por el canal de texto dependiendo de el campeon que el usuario
-            necesitara, para esto utilize la libreria Discord.py y cree un bot en el sitio de Discord.
+            Lo último por hacer era programar un archivo que permitiera interactuar con Discord, necesitaba mandar la imagen por el canal de texto dependiendo del campeón que el usuario necesitara, para esto utilicé la librería Discord.py y cree un bot en el sitio de Discord.
         </p>
         <img src="../photos/leagueproyect/discordPy.png">
-        <span class="image-bottom"> Extracto de codigo del archivo discord_bot.py</span>
+        <span class="image-bottom"> Extracto de código del archivo discord_bot.py</span>
         
 
         <h1>Resultado final</h1>
         <p>
-            Al combinar todos los archivos, el usuario es capaz de incluir el bot a su servidor y 
-            hacer consultas sobre los objetos de determinado campeon usando el comando .ai [nombre campeon]:
+            Al combinar todos los archivos, el usuario es capaz de incluir el bot a su servidor y hacer consultas sobre los objetos de determinado campeón usando el comando .ai
+ [nombre campeón]:
         </p>
 
         <img src="../photos/leagueproyect/finalResult.png">
         <p>
-            Todos los archivos y el codigo estan publicados en mi 
-            repositorio <a href="https://github.com/Already-Dead-24/ExtractData.git" target="_blank">https://github.com/Already-Dead-24/ExtractData.git</a>
+            Todos los archivos y el código están publicados en mi repositorio <a href="https://github.com/Already-Dead-24/ExtractData.git" target="_blank">https://github.com/Already-Dead-24/ExtractData.git</a>
         </p>
 
        

@@ -139,7 +139,7 @@
     margin-top: 2vmin;
     color: black;
     font-family: "Alliance";
-    font-size: calc(0.5vw + .5rem);
+    font-size: calc(0.5vw + .7rem);
     font-weight: regular;
     line-height: 3vmin;
     text-align: justify;
@@ -181,7 +181,21 @@
 
 }
 
+.images-collage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin-top: 2vh;
+}
 
+.images-collage img {
+    min-width: 10%;
+    max-width: 100%;
+    width: 30%;
+    padding: 0;
+}
 
 @media (max-width: 1000px){
     .banner{
