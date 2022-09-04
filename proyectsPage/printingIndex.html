@@ -13,57 +13,47 @@
 <body>
 <div class="nav-bar"> <a href="../index.html"><h1>Already_Dev</h1></a></div>
 <div class="banner"> 
-    <div class="banner-image"><img src="../photos/printerProyect/banner.webp"></div>
+    <div class="banner-image"><img src="../photos/printerProyect/banner.jpg"></div>
     
     <div class="banner-text">
         <p id="upper-text"> 3D - Fusion360 - Cura - Construccion</p>
         <h1 id="title">Impresion 3D</h1>
         <p id="subtitle">
-            Todo lo relacionado con mi primera impresora , hasta el Emprendimiento
+            Desde mi primera impresora, hasta mi emprendimiento
         </p>
     </div>
 </div>
 <div class="main-container">
     <div class="content">
 
-        <h1>Objetivo: </h1>
+        <h1>Historia y Objetivo: </h1>
         <p>
-        Este proyecto nacio con el objetivo de encontrar una forma para conocer que Objetos, runas y otras cosas
-        se estaban usando con cualquier personaje de el juego League Of Legends. Apesar de que ya existen
-        sitios web y aplicaciones que tienen el mismo objetivo, necesitaba una solucion que no necesitara instalar
-        programas externos o abrir el navegador, dado a que no todos los computadores pueden jugar, 
-        utilizar discord(para llamadas) y abrir una pestana en el navegador para buscar la informacion 
-        que necesitan.
+            Desde 5.º básico me ha interesado todo lo relacionado con electrónica, esto me llevo a trabajar con Arduino a una temprana edad. El año 2017 tuve mi primera aproximación a las impresoras 3D, cuando el canal de YouTube "El profe García" subió una serie de videos relacionados con este tema. Quede encantado con la idea de la impresión 3D, por lo que decidí armar mi propia impresora usando Arduino
+
         <br>
         <br>
-        Ademas estaba en busqueda de un proyecto que me permitiera mejorar mis habilidades con Python, 
-         Pandas(para procesar datos) y el trabajo con APIs
+        El objetivo era armar una impresora 3D básica usando el shield
+ RAMPS1.4
+ y motores paso a paso, para esto tuve que investigar mucho sobre impresión 3D, Arduino y también me vi obligado a aprender habilidades en el trabajo de madera y metal.  Nunca imagine que esa decisión que tome con 13 años empezaría una bonita pasión que me llevo hasta donde estoy ahora
         </p>
 
-        <h1>Recopilacion de informacion</h1>
+        <h1>Primera Impresora</h1>
         <p>
-        Para saber que items y runas convenian mas, era necesario saber lo que los jugadores de rango mas
-        alto estaban usando con los mas de 140 personajes, aqui es donde la API de league of legends
-        entra en juego. Esta API contiene toda la informacion del juego como historial de partidas,
-        estadisticas competitivas, partidas en vivo y mucho mas. En el sitio <a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
-        se encuentra toda la informacion sobre como usarla y los requisitos.
-
-        <br><br>
-        Como la API de riot es una web API, tuve que aprender a interactuar con esta usando la libreria request,
-        apesar de que existen librerias especificas para interactuar con la API como lo son
-        riotwatcher, cassiopeia y pyot. Como trabaje con la libreria request tuve que hacer todo desde 0,
-        incluyendo el manejo de errores.
+            Después de hacer la respectiva investigación de como funcionaba una impresora 3D (Gcode
+            , extrusión, motores, controladores, sensores etc.) compre los materiales y me base en el diseño que El profe García uso para su impresora. El resultado una impresora cartesiana con 3 motores con una área de impresión muy limitada, sin cama caliente y mucho menos nivelación automática.
         </p>
-        <img src="../photos/leagueproyect/requestInteraction.png">
-        <span class="image-bottom"> Codigo para obtener una lista de jugadores segun su rango </span>
+        <img src="../photos/printerproyect/firstPrinter.png">
+        <span class="image-bottom"> Primer chasis de impresora 3D </span>
         <p>
-            Finalmente, despues de muchas versiones, programe un script que recopila informacion de miles
-            de partidas de jugadores de alto rango y devuelve un archivo CSV con la siguiente estructura:
+            A pesar de ser muy básica, logre algunas impresiones decentes como estas:
         </p>
-        <img src="../photos/leagueproyect/csvFile.png">
-        <span class="image-bottom"> archivo csv con informacion recopilada </span>
+        <img src="../photos/printerproyect/firstPrints.webp">
+        <span class="image-bottom">La de-laminación de algunas piezas es notable</span>
 
-        <h1>Analisis de informacion</h1>
+        <img src="../photos/printerproyect/firstPrints2.webp">
+        <span class="image-bottom"> soportes para Nintendo Switch </span>
+
+        <h1>Segunda Impresora: evolución</h1>
         <p>
            Con la informacion ya ordenada en un CSV, era momento de analizarla para poder
            encontrar que objetos y cuales runas eran mejores para un determinado personaje. Para esto 
