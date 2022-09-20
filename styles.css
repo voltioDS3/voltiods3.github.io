@@ -136,6 +136,7 @@
     text-align: center;
     width: 50%;
     margin-top: 1vmin;
+    
 }
 
 
@@ -196,6 +197,7 @@
     font-weight: normal;  
     margin-top: 4vmin;
     font-size: 2.5vmin;
+    text-align: justify;
     
 }
 
@@ -479,7 +481,9 @@ q{
     
 
   }
-
+.text-container{
+    padding-right: 20px;
+}
   .text-container h1{
     font-family: "Source Code Pro";
     font-weight: bold;  
@@ -493,6 +497,7 @@ q{
     font-weight: normal;  
     margin-top: 4vmin;
     font-size: 2.5vmin;
+    text-align: justify;
   }
 
   .text-container h2{
