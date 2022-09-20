@@ -221,7 +221,13 @@
     
 }
 
-
+.timeline-banner p{
+    font-family: "Alliance";
+    font-weight: bold; 
+    font-size: 2vmin; 
+    color: black;
+    transition: all 1s ease;
+}
 .slide_3{
     
     position: relative;
