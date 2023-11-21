@@ -231,7 +231,7 @@
 .slide_3{
     
     position: relative;
-    height: 220vmin;
+    height: 240vmin;
     background-color: #18978F;
     display: flex;
     flex-direction: row;
@@ -380,7 +380,11 @@ q{
     height: auto; 
 }
 
-
+#s2023{
+    position: relative;
+    top: 120vmin;  
+    height: auto; 
+}
 
 #p2016{
     top: 40vmin;
